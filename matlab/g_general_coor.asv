@@ -1,0 +1,9 @@
+E = [t,3.*t,9.*t];
+t = -0.1:0.01:0.1;
+q1 = exp(t.*t);
+q2 = exp(3.*t);
+q3 = exp(9.*t);
+p1 = probability(log(t-1),E,t);
+p2 = probability(3,E,t);
+p3 = probability(9,E,t);
+plot(q1,p1,q2,p2,q3,p3);
