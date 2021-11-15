@@ -1,0 +1,14 @@
+E = [1,3,9];
+t = -1:0.01:1;
+t1 = 0:0.01:1;
+t2 = -1:0.01:0;
+p1 = probability(1,E,t);
+p2 = probability(3,E,t);
+p3 = probability(9,E,t);
+plot(t, 1-p1, 'k', t, 1-(p1+p2), 'k');
+text(-0.6,0.6,'f_1','FontSize',24);
+text(-0.05,0.5,'f_2','FontSize',24);
+text(0.5,0.4,'f_3','FontSize',24);
+xlabel("Time");
+ylabel("Relative frequencies");
+title("Relative frequencies");
